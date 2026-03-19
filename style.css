@@ -1,0 +1,136 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+body{
+  
+    background: #888;
+    font-size: 16px;
+}
+/* ********************************** */
+/* inicio Cabeçalho */
+
+#cabeçalho{
+     background: rgb(224, 223, 223);
+     padding:15px;
+     
+}
+
+#cabeçalho a{
+    text-decoration: none;
+    padding:10px;
+    margin-top:10px;
+    color:rgba(233, 69, 69, 0.925);
+}
+
+#nome, #links{
+    text-align: center;
+    color:rgba(233, 69, 69, 0.925);
+   }
+
+.branco{
+    color:white;
+}
+
+.postagem a{
+    color:  rgba(233, 69, 69, 0.925);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.postagem2 a{
+    color:  rgba(243, 52, 52, 0.925);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.postagem a:hover{
+    text-decoration: underline;
+}
+
+.postagem2 a:hover{
+    text-decoration:underline;
+}
+
+#cabeçalho a:hover{
+    background: 20px whitesmoke;
+    padding: 1px;
+}   
+
+.linha{
+    text-decoration: underline;
+}
+/* ******************** */
+/* fim Cabeçalho */
+
+/* **************************************** */
+
+/* inicio barra lateral */
+
+    .barra-lateral{
+        width: 250px;
+        float: right;
+        background: rgb(243, 243, 243);
+        margin: 10px 70px 0px;
+         }
+
+
+/* Fim barra lateral */
+/*  *****************************************/
+/* Início conteúdo */
+
+h2{
+    color: rgb(255, 189, 199);
+}
+
+h3{
+        color: rgb(255, 189, 199);
+}
+
+.box{
+    background: #c4b2b5; 
+    margin: 0px 10px;
+    padding: 5px;
+}
+
+.conteudo{
+    width: 650px;
+    background:rgb(243, 243, 243);
+    margin:0 auto;
+    
+}
+
+.postagem{
+    margin: 8px;
+    margin-bottom:20px;
+    
+}
+
+.postagem2{
+    margin:8px;
+    margin-top:20px;   
+}
+
+p{
+    font-size: 1.2em;
+    color: rgba(233, 69, 69, 0.925);
+
+}
+
+.data p{
+  color: black;
+}
+
+.postagem p{
+    padding:10px;
+}
+
+img{
+    padding-left: 70px;
+    width:500px;
+    margin-bottom: 10px;
+}
+
+
