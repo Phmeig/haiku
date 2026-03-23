@@ -42,7 +42,7 @@ body{
 
 
 #cabeçalho a:hover{
-    background: 20px whitesmoke;
+    background:  whitesmoke;
     padding: 1px;
 }   
 
@@ -56,22 +56,15 @@ body{
 
 /* inicio barra lateral */
 
-.barra-lateral{
-        width: 18.5%;
-        float: right;
-        background: rgb(243, 243, 243);
-        margin: 10px 70px 0px;
-        padding: 10px 0px;
-         }
-
+.barra-lateral,
 .barra-lateral2{
-        width: 18.5%;
-        float:  right;
-        clear: right;
-        background: rgb(243, 243, 243);
-        margin: 10px 70px 0px;
-        padding: 10px 0px;
-    }
+    width: 18.5%;
+    float: right;
+    clear: right;
+    background: rgb(243, 243, 243);
+    margin: 10px 10px 0px; /* diminui isso */
+    padding: 10px 0px;
+}
 
  h3{
     background-color: rgb(145, 142, 142);
@@ -147,7 +140,7 @@ p{
     padding-bottom: 15px;
 }
 
-img{
+.conteudo img{
     padding-left: 70px;
     width:70%;
     margin-bottom: 10px;
@@ -159,7 +152,7 @@ img{
 /* Página Japão */
 
 ul{
-    text-decoration: none;
+    list-style: none;
     
 }
 
