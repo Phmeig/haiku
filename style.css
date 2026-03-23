@@ -5,7 +5,7 @@
    
 }
 body{
-  
+    overflow-x: hidden;
     background: rgb(255, 0, 0);
     font-size: 16px;
 }
@@ -57,7 +57,7 @@ body{
 /* inicio barra lateral */
 
 .barra-lateral{
-        width: 250px;
+        width: 18.5%;
         float: right;
         background: rgb(243, 243, 243);
         margin: 10px 70px 0px;
@@ -65,7 +65,7 @@ body{
          }
 
 .barra-lateral2{
-        width: 250px;
+        width: 18.5%;
         float:  right;
         clear: right;
         background: rgb(243, 243, 243);
@@ -81,10 +81,9 @@ body{
     }
 
 .box{ 
-     background: rgb(243, 243, 243);
+    background: rgb(243, 243, 243);
     margin: 0px 10px;
     padding: 5px;
-    height: 40px;
     display:inline-block;
 }
 
@@ -102,7 +101,8 @@ h2, p{
 
 
 .conteudo{
-    width: 650px;
+    width: 100%;
+    max-width: 650px;
     background:rgb(243, 243, 243);
     margin:0 auto;
     
@@ -149,7 +149,7 @@ p{
 
 img{
     padding-left: 70px;
-    width:500px;
+    width:70%;
     margin-bottom: 10px;
 }
 
