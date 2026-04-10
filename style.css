@@ -1,195 +1,38 @@
 *{
-    margin:0px;
-    padding:0px;
-    font-family: Arial, Helvetica, sans-serif;
-   
+    margin:0;
+    padding:0;
 }
+
 body{
-    overflow-x: hidden;
-    background: rgb(255, 0, 0);
-    font-size: 16px;
-}
-/* ********************************** */
-/* inicio Cabeçalho */
-
-#cabeçalho{
-     background: rgb(78, 78, 78);
-     padding: 0px 0px 0px 2px;
-     
+    background: black;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
-.box a {
-    text-decoration: none;
+.container1{
+    border:1px solid red;
+    height:70px;
+    width:100%;
+  
 }
 
-#cabeçalho a{
-    text-decoration: none;
-    padding: 10px;
-    margin-top:10px;
-    color:rgba(233, 69, 69, 0.925);
+.todos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
 }
 
-#nome, .links{
-    text-align: center;
-    color:rgba(241, 27, 27, 0.925);
-   }
-
-
- .branco{
-    color:white;
-    
+.nome{
+    margin-top: 10px;
 }
 
-
-#cabeçalho a:hover{
-    background:  whitesmoke;
-    padding: 1px;
-}   
-
-
-
-
-/* ******************** */
-/* fim Cabeçalho */
-
-/* **************************************** */
-
-/* inicio barra lateral */
-
-.barra-lateral,
-.barra-lateral2{
-    width: 18.5%;
-    float: right;
-    clear: right;
-    background: rgb(243, 243, 243);
-    margin: 10px 10px 0px; /* diminui isso */
-    padding: 10px 0px;
+.ha{
+    color: rgb(235, 92, 92)
 }
 
- h3{
-    background-color: rgb(145, 142, 142);
-    padding:5px;
-    font-size: 1.2em;
-    color: rgb(255, 189, 199);
-    }
-
-.box{ 
-    background: rgb(243, 243, 243);
-    margin: 0px 10px;
-    padding: 5px;
-    display:inline-block;
+#gap{
+    display:flex;
+    align-self: space-evenly;
 }
-
-
-
-/* Fim barra lateral */
-/*  *****************************************/
-/* Início conteúdo */
-
-h2, p{
-    color: rgb(214, 157, 166);
-    margin-left:5px;    
-}
-
-
-
-.conteudo{
-    width: 100%;
-    max-width: 650px;
-    background:rgb(243, 243, 243);
-    margin:0 auto;
-    
-}
-
-.postagem, .postagem2{
-    margin: 8px;
-    margin-bottom:20px;
-    
-}
-
-
-.postagem a, .postagem2 a{
-    color:  rgba(233, 69, 69, 0.925);
-    text-decoration: none;
-    padding: 10px;
-    margin: 0px 0px 0px 20px;
-}
-
-
-a:hover p{
-  color: rgb(14, 14, 163);  
-}
-
-p{
-    font-size: 1.2em;
-    color: rgba(233, 69, 69, 0.925);    
-    margin: 10px;
-}
-
-.espaco{
-    margin: 10px;
-}
-
-.data {
-  color: black;
-   margin-left:5px;    
-}
-
-.postagem p, .postagem2 p{
-    padding:10px 0 0 0;
-    padding-bottom: 15px;
-}
-
-.conteudo img{
-    padding-left: 70px;
-    width:70%;
-    margin-bottom: 10px;
-}
-
-/* Fim de Conteudo */
-/* **************************** */
-
-/* Página Japão */
-
-ul{
-    list-style: none;
-    
-}
-
-li{
-   font-size: 20px; 
-   color:brown; 
-}
-
-.imgjp{
-    float: right;
-    height: 250px;
-    width:300px;
-    padding: 0 10px 0 0;
-    margin-left: 20px;
-}
-
-.imgjp2{
-    height: 250px;
-    width:300px;
-    padding: 10px 10px 0 10px;
-    float: left;
-}
-
-h2.pad{
-    padding-top: 20px;
-}
-/* Fim pag JP */
-/* ******************************** */
-
-/* Início pag épico */
-
-#livro{
-    width: 200px;
-    height:219px;
-    float:right;
-    margin-top: 30px;
-    margin-right:20px;
-}
-
-/* Fim pag épico */
