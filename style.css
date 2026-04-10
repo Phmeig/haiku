@@ -9,11 +9,16 @@ body{
     color: white;
 }
 
+a{
+    color: inherit;
+    text-decoration: none;
+}
+/* Inicio cabeçalho */
 .container1{
     border:1px solid red;
     height:70px;
     width:100%;
-  
+    background-color: rgb(255, 123, 123);
 }
 
 .todos{
@@ -21,18 +26,30 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:5px;
 }
 
 .nome{
-    margin-top: 10px;
+    width: 5%;
+    height:45px;
+    display:flex;   
+    justify-content: center;
+    align-items:center;
+    font-size: 25px;
+
 }
 
 .ha{
-    color: rgb(235, 92, 92)
+    color: rgb(0, 0, 0);
 }
 
-#gap{
-    display:flex;
-    align-self: space-evenly;
+nav > a{
+    text-decoration: none;
+    color: white;
 }
+
+a:hover{
+    background-color:rgb(141, 136, 136);
+}
+
+
+/* Fim cabeçalho */
