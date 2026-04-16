@@ -15,11 +15,11 @@ body{
 .container{
     border: 1px solid #ffc0cb;
     display:grid;
-    grid-template: 70px 1fr 30px / 1fr 1fr 1fr 1fr;
+    grid-template: 70px 1fr 30px / 1fr 1fr 1fr ;
     grid-template-areas: 
-    'header header header header'
-    'main main main aside'
-    'footer footer footer footer';
+    'header header header '
+    'main main aside'
+    'footer footer footer';
     min-height: auto;
 }
 
@@ -29,12 +29,9 @@ main{
 
 aside{
     grid-area: aside;
-    display:grid;
-    grid-template: 1fr 1fr  / 1fr 1fr 1fr;
-    grid-template-areas:
-    'box1 box1 box1'
-    'box2 box2 box2';
-    height:auto;
+    display: flex;
+    flex-direction: column;
+    width:80%;
 }
 
 footer{
@@ -82,12 +79,23 @@ nav > a{
 
 .box1{
     width: 85%; 
+    min-height:100px;
     margin:10px;
     display:flex;
     align-items:center;
     background:rgb(243, 243, 243);
     flex-flow: column;
     grid-area:box1;
+}
+
+.box2{
+    width: 85%; 
+    margin:10px;
+    display:flex;
+    align-items:center;
+    background:rgb(243, 243, 243);
+    flex-flow: column;
+    grid-area:box2;
 }
 
 .box1 > a:hover{
@@ -112,17 +120,7 @@ nav > a{
     color:red;
     margin:5px 0 0 5px;
 }
- 
-.box2{
-    width: 85%; 
-    margin:10px;
-    display:flex;
-    align-items:center;
-    background:rgb(243, 243, 243);
-    flex-flow: column;
-    grid-area:box2;
-    grid-column: span 3;
-}
+
  
 /* FIM conteúdo lateral*/
 
@@ -171,9 +169,17 @@ a:hover p{
 
 /* Fim Conteúdo principal pág.001 */
 /* Início Responsividade */
-@media (max-width:320px){
+@media (max-width:360px){
     
-    header{
+.container{
+    grid-template: 70px auto 250px /  auto;
+    grid-template-areas:
+    'header '
+    'main '
+    'footer ';
+}
+
+header{
     grid-area: header;
     display:flex;
     flex-flow:column wrap;
@@ -182,60 +188,13 @@ a:hover p{
     gap:5px;
     background: rgb(78, 78, 78);
 }
+
+aside{
+    display:none;
 }
 
-@media (max-width:320px){ /* Lateral*/
-    .box1{
-    width: 100%; 
-    height:auto;
-    margin:10px;
-    display:flex;
-    align-items:center;
-    background:rgb(243, 243, 243);
-    flex-flow: column;
-    grid-area:box1;
-}
-
-.box1 > a:hover{
-    background: transparent;
-}
-
-.box2 > a:hover{
-    background: transparent;
-}
-
-.titulo{
-    display:flex;
-    width:80%;
-    background-color: rgb(145, 142, 142);
-    align-items:flex-start;
-    margin-top:5px;
-    font-size: 1.2em;
-    color: rgb(255, 189, 199);
-}
-
-.textolateral{
-    color:red;
-    margin:5px 0 0 5px;
-}
- 
-.box2{
-    width: 30%; 
-    height:auto;
-    margin:10px;
-    display:flex;
-    align-items:center;
-    background:rgb(243, 243, 243);
-    flex-flow: column;
-    grid-area:box2;
-    grid-column: span 3;
-}
-}
-
-@media (max-width:360px){ /* Principal */
-    .conteudo{
-    border:1px solid blue;
-    width: 80%; 
+.conteudo{
+    width: auto; 
     margin:10px;
     display:flex;
     align-items:flex-start;
@@ -275,4 +234,6 @@ a:hover {
 a:hover p{
     color: blue;
 }
-} 
+}
+
+
