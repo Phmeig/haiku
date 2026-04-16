@@ -30,7 +30,7 @@ main{
 aside{
     grid-area: aside;
     display: flex;
-    flex-direction: column;
+    flex-direction: column ;
     width:80%;
 }
 
