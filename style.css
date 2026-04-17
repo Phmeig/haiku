@@ -13,7 +13,6 @@ body{
 /* Início Estrutura */
 
 .container{
-    border: 1px solid #ffc0cb;
     display:grid;
     grid-template: 70px 1fr 30px / 1fr 1fr 1fr ;
     grid-template-areas: 
@@ -166,6 +165,21 @@ a:hover {
 a:hover p{
     color: blue;
 }
+
+.citacao{
+    color:black;
+    display:flex;
+    flex-flow: row wrap;
+    width:100%;
+    height: auto;
+    justify-content: center;
+}
+
+.titulop{
+    margin: 0px 10px 10px 10px;    
+    color: rgb(196, 147, 155);    
+}
+
 
 /* Fim Conteúdo principal pág.001 */
 /* Início Responsividade */
